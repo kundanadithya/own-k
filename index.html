@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+      .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the images horizontally */
+            gap: 20px;
+        }
+
+      .image-block {
+            width: 25%; /* Each block takes up 25% of the container width */
+            /* Or use a fixed width: width: 300px;  */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+      .image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+      .caption {
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="image-block">
+            <img src="images/image1.jpg" alt="Image 1">
+            <div class="caption">Beautiful Landscape</div>
+        </div>
+
+        <div class="image-block">
+            <img src="images/image2.png" alt="Image 2">
+            <div class="caption">Cute Kitten</div>
+        </div>
+
+        <div class="image-block">
+            <img src="images/image3.gif" alt="Image 3">
+            <div class="caption">Funny GIF</div>
+        </div>
+
+        <div class="image-block">
+            <img src="images/image4.jpg" alt
